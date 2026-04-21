@@ -100,15 +100,15 @@ async function startServer() {
     res.json(batchReports);
   });
 
-  // Gemini AI Proxy Endpoint
-  app.post("/api/ai/chat", async (req, res) => {
-    const { prompt, model = "gemini-3-flash-preview" } = req.body;
-    
-    const apiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
-    
-    if (!apiKey) {
-      return res.status(500).json({ error: "API key not configured", details: "GEMINI_API_KEY is missing" });
-    }
+   // Gemini AI Proxy Endpoint
+   app.post("/api/ai/chat", async (req, res) => {
+     const { prompt, model = "gemini-1.5-flash" } = req.body;
+
+     const apiKey = process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+
+     if (!apiKey) {
+       return res.status(500).json({ error: "API key not configured", details: "VITE_GEMINI_API_KEY is missing" });
+     }
 
     if (!prompt) {
       return res.status(400).json({ error: "Prompt is required" });

@@ -60,7 +60,7 @@ const projects = [
      category: "Automatizaciones",
      title: "GLOVO DASHBOARD",
      description: "Dashboard técnico full-stack para comparar triggers de tiempo real (Kafka) vs batch (Cron), con visualización de latencia y completitud de datos.",
-     image: "/imagenes/glovo.jpg",
+     image: "/imagenes/glovo.png",
      isAssistant: "glovo"
    },
    {
