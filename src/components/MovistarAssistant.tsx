@@ -81,7 +81,7 @@ export const MovistarAssistant: React.FC<MovistarAssistantProps> = ({ onClose })
 
     try {
       const response = await aiRef.current.models.generateContent({
-        model: "gemini-3.1-flash-lite-preview",
+        model: "gemini-1.5-flash",
         contents: messages.concat(userMessage).map(m => ({
           role: m.role === "assistant" ? "model" : "user",
           parts: [{ text: m.content }]

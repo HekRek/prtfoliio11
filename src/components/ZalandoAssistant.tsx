@@ -95,7 +95,7 @@ export const ZalandoAssistant = ({ onClose }: { onClose: () => void }) => {
     try {
       const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
       const response = await ai.models.generateContent({
-        model: "gemini-3-flash-preview",
+        model: "gemini-1.5-flash",
         contents: `Analiza el siguiente email de soporte de Zalando y extrae datos. 
         Devuelve estrictamente un JSON con este formato:
         {

@@ -55,22 +55,22 @@ const projects = [
     image: "/imagenes/iberdrola.png",
     link: "https://youtu.be/9BIORoWmozQ?si=-ASTApxgl5ZZrgT6"
   },
-  {
-    id: "09",
-    category: "Automatizaciones",
-    title: "GLOVO DASHBOARD",
-    description: "Dashboard técnico full-stack para comparar triggers de tiempo real (Kafka) vs batch (Cron), con visualización de latencia y completitud de datos.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=1974&auto=format&fit=crop",
-    isAssistant: "glovo"
-  },
-  {
-    id: "10",
-    category: "Automatizaciones",
-    title: "ZALANDO SUPPORT AI",
-    description: "Gestión automatizada de incidencias con extracción de datos mediante IA, validación OMS y enrutado inteligente de clientes.",
-    image: "https://images.unsplash.com/photo-1534452286338-2ef2f9f10f81?q=80&w=2070&auto=format&fit=crop",
-    isAssistant: "zalando"
-  }
+   {
+     id: "09",
+     category: "Automatizaciones",
+     title: "GLOVO DASHBOARD",
+     description: "Dashboard técnico full-stack para comparar triggers de tiempo real (Kafka) vs batch (Cron), con visualización de latencia y completitud de datos.",
+     image: "/imagenes/glovo.jpg",
+     isAssistant: "glovo"
+   },
+   {
+     id: "10",
+     category: "Automatizaciones",
+     title: "ZALANDO SUPPORT AI",
+     description: "Gestión automatizada de incidencias con extracción de datos mediante IA, validación OMS y enrutado inteligente de clientes.",
+     image: "/imagenes/zalando.png",
+     isAssistant: "zalando"
+   }
 ];
 
 const TextScramble = ({ text, delay = 0 }: { text: string; delay?: number }) => {
